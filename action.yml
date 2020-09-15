@@ -1,0 +1,13 @@
+name: 'YQ by mikefarah as github action'
+description: 'yq '
+author: 'veryravenretroroyalroger'
+branding:
+  icon: 'zap-off'
+  color: 'red'
+inputs:
+  file:
+    description: 'enter shell script to run'
+    required: true
+runs:
+  using: 'docker'
+  image: 'dockerfile'
