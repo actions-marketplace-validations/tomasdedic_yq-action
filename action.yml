@@ -5,9 +5,14 @@ branding:
   icon: 'zap-off'
   color: 'red'
 inputs:
-  file:
-    description: 'enter shell script to run'
+  command:
+    description: 'enter command to run'
     required: true
+outputs:
+  image_tag: # id of output
+    description: 'image tag'
 runs:
   using: 'docker'
   image: 'dockerfile'
+  args:
+    - ${{ inputs.command }}
