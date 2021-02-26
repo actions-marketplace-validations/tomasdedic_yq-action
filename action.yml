@@ -8,9 +8,9 @@ inputs:
   command:
     description: 'enter command to run'
     required: true
-outputs:
-  image_tag: # id of output
-    description: 'image tag'
+# outputs:
+#   image_tag: # id of output
+#     description: 'image tag'
 runs:
   using: 'docker'
   image: 'dockerfile'

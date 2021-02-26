@@ -1,4 +1,4 @@
 #!/bin/sh -l
-echo "::set-output name=image_tag::${steps.prep.output.tags}"
-sh -c $1
-
+set -x
+echo "image_tag ${image_tag}"
+eval "$1"
