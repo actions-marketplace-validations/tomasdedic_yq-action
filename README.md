@@ -25,5 +25,5 @@ jobs:
     - name: Generate json file
       uses: tomasdedic/action-yq
       with:
-        file: pathToYourShellScript 
+        command: yourCommand 
 ```
